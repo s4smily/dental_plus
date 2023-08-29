@@ -360,7 +360,67 @@ padding-bottom: 6px;
     transform: translateY(-50%);
 }
 
+/*banner section starts*/
+
+/*features section starts*/
+
+
+
+.features{margin-top: 50px;}
+
+.ftrphoto{
+
+width: 90%;
+}
+
+.ftrphoto img{
+
+width: 100%;
+}
+
+.ftrtextrow{
+
+/* margin-bottom: 30px; */
+}
+
+.ftrtextrow h2{
+
+
+}
+
+.ftrtextrow p{
+
+
+}
+
+.ftritem{
+
+/* margin-bottom: 30px; */
+
+/* margin-right: 0px; */
+
+margin-top: 25px;
+}
+
+.ftricon{
+
+font-size: 30px;
+
+color: #f69165;
+}
+
+.ftritem h3{
+
+font-size: 25px;
+}
+
+.ftritem p{
+
+font-size: 14px;
+}
 
 
 
 
+
+/*features section ends*/
