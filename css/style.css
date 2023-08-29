@@ -420,7 +420,187 @@ font-size: 14px;
 }
 
 
-
-
-
 /*features section ends*/
+
+/*doctor section starts*/
+
+.doctor{
+
+background: lightgray;
+
+padding: 40px 0;
+}
+
+.doctextrow{
+
+width: 40%;
+
+margin: auto;
+
+margin-bottom: 30px;
+}
+
+.doctextrow h2{
+
+font-weight: 700;
+
+font-size: 35px;
+}
+
+.doctexticon{
+
+margin: 5px 0;
+
+color: #f69165;
+}
+
+.doctextrow p{
+
+font-size: 16px;
+
+font-weight: normal;
+}
+
+.docitemrow{
+
+width: 80%;
+
+margin: auto;
+}
+
+.doclist{
+
+
+}
+
+.doclistitem{
+
+text-align: center;
+}
+
+.doclistitem h4{
+
+font-size: 20px;
+
+margin-top: 10px;
+}
+
+.doclistitem p{
+
+
+}
+
+.doclistitem span{
+
+display: block;
+
+background: #00cce0;
+
+width: 100%;
+
+height: 3px;
+
+margin: 20px 0;
+}
+
+.doclistphoto{
+
+    position: relative;
+}
+
+.doclistphoto ul{
+
+list-style: none;
+
+display: flex;
+
+
+justify-content: center;
+
+margin: 0;
+
+padding: 0;
+
+position: absolute;
+
+top: 70%;
+
+left: 50%;
+
+transform: translate(-50%, -50%);
+
+opacity: 0;
+transition: .9s all ease-in-out;
+}
+
+.doclistitem:hover .doclistphoto ul{
+
+
+    opacity: 1;
+    top: 50%;
+    z-index: 1;
+
+}
+
+.doclistitem:hover.doclistitem h4{
+
+    color: #f69165;
+   
+}
+
+.doclistitem:hover.doclistitem span{
+
+ background: #f69165;
+   
+}
+
+.doclistphoto ul li a{margin: 0 5px;border: 1px solid white;padding: 1px 7px;
+
+color: white;
+}
+
+
+
+
+
+
+.doclistphoto ul li a:hover{
+
+  background-color: #f69165;
+
+  border: #f69165;
+
+  
+}
+
+.doclistphoto::before{
+
+
+    content: '';
+    background-color: rgb(31, 33, 33);
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+
+  
+    position: absolute;
+    transition: .7s all ease-in-out;
+
+}
+
+.doclistphoto:hover::before{
+    height: 100%;
+    opacity: .7;
+    top: 0;
+    z-index: 0;
+    
+    
+}
+
+.doclistphoto img{
+
+width: 100%;
+}
+
+
+/*doctor section ends*/
