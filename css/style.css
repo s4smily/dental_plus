@@ -88,30 +88,7 @@ font-weight: normal;
 justify-content: space-between;
 }
 
-.rombos{
-
-background: #f69165;
-
-margin: 0;
-
-padding-bottom: 4px;
-
-display: flex;
-
-padding: 18px 0;
-
-width: 201px;
-
-/* text-align: center; */
-
-justify-content: center;
-
-/* clip-path: polygon(28% 0, 100% 0%, 83% 37%, 12% 37%); */
-
-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-
-/* margin-right: 17px !important; */
-}
+.rombos{background: #f69165;margin: 0;display: flex;padding: 18px 0;width: 201px;justify-content: center;clip-path: polygon(14% 0%, 100% -85%, 75% 100%, 0% 100%);padding-right: 25px;}
 
 .rombos i{
 
@@ -146,11 +123,15 @@ background: #00cce0;
 /*banner section starts*/
 .banner{
 
-    background-image: url(../assets/banner_bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: fit-content;
+background-image: url(../assets/banner_bg.png);
+
+background-position: center;
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+max-height: 72vh;
 }
 
 .bannercontainer{
@@ -292,10 +273,94 @@ bottom: 0;
 
 width: 80%;
 
-margin-left: 25%;
+margin-left: 20%;
 }
 
 .bannerimg img{
 
 width: 100%;
 }
+
+.owl-dots{
+
+    
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    
+}
+
+.owl-dot span{
+
+    
+    background: rgb(1, 31, 17);
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 0 3px;
+    
+}
+
+.owl-dot.active span{
+
+    
+    background: rgb(180, 11, 96);
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.owl-nav{
+    display: inline;
+}
+
+.owl-prev span{
+
+font-size: 30px;
+
+background: #00c8dc;
+
+padding-bottom: 7px;
+
+padding: 0 6px;
+
+padding-bottom: 6px;
+}
+
+.owl-next span{
+
+font-size: 30px;
+
+background: #f69165;
+
+padding-bottom: 7px;
+
+padding: 0 6px;
+
+padding-bottom: 6px;
+}
+
+.owl-prev{
+
+    position: absolute;
+    top: 50%;
+    left: -6%;
+    transform: translateY(-50%);
+}
+
+.owl-next{
+
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+}
+
+
+
+
+

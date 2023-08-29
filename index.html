@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -155,37 +157,125 @@
     <section class="banner">
       <div class="container bannercontainer">
         <div class="row bnrow">
-          <div class="sliderdiv">
-            <div class="col-md-6 slidertext">
-              <h2>We provide total</h2>
-              <h1>Dental Care Solution</h1>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                aliquam eaque, iusto assumenda beatae ex voluptate sunt eius
-                totam facilis!
-              </p>
-              <div class="buttondiv">
-                <a class="btn">learn more</a>
-                <a class="btn">book now</a>
+          <!--owl-cara starts here for slider show-->
+          <div class="owl-carousel">
+            <!--slideshow item one starts-->
+            <div class="sliderdiv">
+              <div class="col-md-6 slidertext">
+                <h2>We provide total</h2>
+                <h1>Dental Care Solution</h1>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore aliquam eaque, iusto assumenda beatae ex voluptate sunt
+                  eius totam facilis!
+                </p>
+                <div class="buttondiv">
+                  <a class="btn">learn more</a>
+                  <a class="btn">book now</a>
+                </div>
+              </div>
+
+              <div class="col-md-6 sliderimg">
+                <div class="bannerimg">
+                  <img src="assets/banner_women.png" class="img-fluid" alt="" />
+                </div>
               </div>
             </div>
 
-            <div class="col-md-6 sliderimg">
-              <div class="bannerimg">
-                <img src="assets/banner_women.png" class="img-fluid" alt="" />
+            <!--slideshow item one ends-->
+
+            <!--slideshow item two starts-->
+
+            <div class="sliderdiv">
+              <div class="col-md-6 slidertext">
+                <h2>We provide total</h2>
+                <h1>Dental Care Solution</h1>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore aliquam eaque, iusto assumenda beatae ex voluptate sunt
+                  eius totam facilis!
+                </p>
+                <div class="buttondiv">
+                  <a class="btn">learn more</a>
+                  <a class="btn">book now</a>
+                </div>
+              </div>
+
+              <div class="col-md-6 sliderimg">
+                <div class="bannerimg">
+                  <img src="assets/banner_women.png" class="img-fluid" alt="" />
+                </div>
               </div>
             </div>
+
+            <!--slideshow item two ends-->
+
+            <!--slideshow item three starts-->
+
+            <div class="sliderdiv">
+              <div class="col-md-6 slidertext">
+                <h2>We provide total</h2>
+                <h1>Dental Care Solution</h1>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore aliquam eaque, iusto assumenda beatae ex voluptate sunt
+                  eius totam facilis!
+                </p>
+                <div class="buttondiv">
+                  <a class="btn">learn more</a>
+                  <a class="btn">book now</a>
+                </div>
+              </div>
+
+              <div class="col-md-6 sliderimg">
+                <div class="bannerimg">
+                  <img src="assets/banner_women.png" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!--slideshow item three ends-->
           </div>
+
+          <!--owl-cara ends here for slider show-->
         </div>
       </div>
     </section>
 
     <!--banner section ends-->
 
+    <!--feature section starts-->
+
     <!--Bootstrap link below-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <!--Bootstrap link ends-->
+
+    <!--jquery and owl-carousel js link starts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!--jquery and owl-carousel js link ends-->
+
+    <!--owl-carousel inline js code starts-->
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          loop: false,
+          autoplay: false,
+          autoplayTimeout: 3000,
+          nav: Boolean,
+
+          responsive: {
+            600: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
+
+    <!--owl-carousel inline js code ends-->
   </body>
 </html>
