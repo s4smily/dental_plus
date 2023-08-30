@@ -533,7 +533,7 @@ opacity: 0;
 transition: .9s all ease-in-out;
 }
 
-.doclistitem:hover .doclistphoto ul{
+.doclistphoto:hover.doclistphoto ul{
 
 
     opacity: 1;
