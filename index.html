@@ -159,7 +159,7 @@
       <div class="container bannercontainer">
         <div class="row bnrow">
           <!--owl-cara starts here for slider show-->
-          <div class="owl-carousel">
+          <div class="bannerslide owl-carousel">
             <!--slideshow item one starts-->
             <div class="sliderdiv">
               <div class="col-md-6 slidertext">
@@ -718,6 +718,87 @@
 
     <!--pricing section ends-->
 
+    <!--brands section starts-->
+
+    <section class="brandsec">
+      <div class="container">
+        <div class="row brndsecrow">
+          <h3>Our Happy Clients</h3>
+          <div class="brndsecicon">
+            <i class="fa-solid fa-dna"></i>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+            exercitationem animi iusto quis?
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="brndwrap">
+            <div class="footerslide owl-carousel">
+              <ul>
+                <li>
+                  <div class="brnlog1">
+                    <img src="assets/brandlogo1.png" class="img-fluid" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="brnlog2">
+                    <img src="assets/brandlogo2.png" class="img-fluid" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="brnlog3">
+                    <img src="assets/brandlogo3.png" class="img-fluid" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="brnlog4">
+                    <img src="assets/brandlogo4.png" class="img-fluid" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="brnlog5">
+                    <img src="assets/brandlog5.png" class="img-fluid" alt="" />
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <div class="brnlog1">
+                    <img src="assets/brandlogo1.png" class="img-fluid" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="brnlog2">
+                    <img src="assets/brandlogo2.png" class="img-fluid" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="brnlog3">
+                    <img src="assets/brandlogo3.png" class="img-fluid" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="brnlog4">
+                    <img src="assets/brandlogo4.png" class="img-fluid" alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div class="brnlog5">
+                    <img src="assets/brandlog5.png" class="img-fluid" alt="" />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--brands section ends-->
+
     <!--Bootstrap link below-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
@@ -732,10 +813,26 @@
     <!--owl-carousel inline js code starts-->
     <script>
       $(document).ready(function () {
-        $(".owl-carousel").owlCarousel({
+        $(".bannerslide").owlCarousel({
           items: 1,
-          loop: false,
-          autoplay: false,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 3000,
+          nav: Boolean,
+
+          responsive: {
+            600: {
+              items: 1,
+            },
+          },
+        });
+      });
+
+      $(document).ready(function () {
+        $(".footerslide").owlCarousel({
+          items: 1,
+          loop: true,
+          autoplay: true,
           autoplayTimeout: 3000,
           nav: Boolean,
 
