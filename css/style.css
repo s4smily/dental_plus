@@ -1086,11 +1086,7 @@ margin: 15px 0;
 
 }
 
-    .locationlogo{
-
-color: green;
-
-}
+    .locationlogo{color: #52ccd2;}
     .locationlogo i{
 
 font-size: 30px;
@@ -1124,8 +1120,7 @@ margin: 20px 0;
 
 margin-right: 10px;
 
-color: green;
-
+color: #52ccd2;
 }
 
     .phonelogo i{
@@ -1157,8 +1152,7 @@ margin: 20px 0;
 
 margin-right: 10px;
 
-color: green;
-
+color: #52ccd2;
 }
 
     .emaillogo i{
@@ -1359,6 +1353,22 @@ font-weight: normal;
 .desktop_hide{
 
     display: none;
+}
+
+.footbutton:hover{
+    background: white;
+    border: none;
+    border-radius: 0;
+    font-weight: 700;
+    color: #f69165;
+    font-size: 15px;
+}
+
+
+.sociallogo ul li:hover {
+
+    background-color: #f69165;
+    cursor: pointer;
 }
 
 /*############################################ last footer section ends #####################################*/
