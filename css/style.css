@@ -11,7 +11,7 @@
     font-size: 16px;
     }
     
-    h1, h2, h3, h4, h6, p{
+    h1, h2, h3, h4, h6, p, a{
     
     margin: 0;
     
@@ -82,6 +82,8 @@
     
     font-weight: normal;
     }
+
+
     
     .preheadrow{/* justify-content: space-between; *//* width: 80%; */margin: auto;}
     
@@ -101,6 +103,11 @@
     font-size: 14px;
     
     color: white;
+    }
+
+    .padding li a{
+
+        padding: 0;
     }
     
     .rombos h4{
@@ -122,6 +129,11 @@
     header{
     
     background: #00cce0;
+    }
+
+    .padding{
+
+        margin-top: 10px;
     }
     
     /*header section ends*/
@@ -301,19 +313,27 @@
     .owl-dot span{
     
         
-    background: rgb(1, 31, 17);
+        background-color: #00cce0;;
     display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
+    width: 8px;
+    border-radius: 7px;
+    height: 8px;
     margin: 0 3px;
         
+    }
+
+
+    
+
+    .owl-dot.active span{
+
+     
     }
     
     .owl-dot.active span{
     
         
-    background: rgb(180, 11, 96);
+        background-color: #f69165;
     display: block;
     width: 10px;
     height: 10px;
@@ -371,12 +391,14 @@
     /*features section starts*/
     
     
-    
+    .ftricon i{
+
+        font-size: 50px;
+    }
+
     .features{margin-top: 50px;}
     
     .ftrphoto{
-    
-    width: 90%;
     }
     
     .ftrphoto img{
@@ -464,15 +486,13 @@ padding: 40px 0;
     
     .doctextrow p{
     
-    font-size: 16px;
+font-size: 16px;
     
-    font-weight: normal;
+font-weight: normal;
     
-    width: 50%;
+margin: auto;
     
-    margin: auto;
-    
-    margin-top: 15px;
+margin-top: 15px;
     }
     
     .docitemrow{
@@ -650,13 +670,11 @@ margin-bottom: 30px;
     
     .srvwrap1 p{
     
-    width: 50%;
+margin: auto;
     
-    margin: auto;
+margin-top: 20px;
     
-    margin-top: 20px;
-    
-    margin-bottom: 30px;
+margin-bottom: 30px;
     }
     
     .srvicon1{
@@ -667,8 +685,6 @@ margin-bottom: 30px;
     }
     
     .srvrow2{
-    
-    margin: 0 50px;
     }
     
     .srvbox{
@@ -697,7 +713,9 @@ margin-top: 25px;
     
     .srvbox ul li i{
     
-    color: #f69165;
+color: #f69165;
+    
+font-size: 50px;
     }
     
     .srvbox ul li h4{
@@ -712,22 +730,24 @@ margin-top: 25px;
     
     .srvbox a{
     
-    border: none;
+border: none;
     
-    outline: none;
+outline: none;
+    
+text-decoration: none;
     }
     
     .srvbox a h5{
     
-    margin: 5px 0;
+margin: 5px 0;
     
-    font-size: 16px;
+font-size: 16px;
     
-    color: gray;
+color: gray;
     
-    border: none;
+border: none;
     
-    outline: none;
+outline: none;
     }
     
     .srvbox:hover.srvbox ul li h4{
@@ -840,8 +860,6 @@ padding-bottom: 5px;
 
     .pricingrow{
         
-width: 75%;
-        
 margin: auto;
     }
 
@@ -910,15 +928,17 @@ padding-top: 30px;
 
 color: #f69165;
 
+margin-bottom: 20px;
 }
 
     .brndsecrow h3{
 
 color: white;
 
+margin-bottom: 20px;
 }
 
-    .brndsecrow p{width: 30; width: 51%;margin: auto;color: white;}
+    .brndsecrow p{width: auto;margin: auto;color: white;}
 
     .brndwrap{
 
@@ -936,6 +956,7 @@ align-items: center;
 
 justify-content: space-evenly;
 
+padding: 0;
 }
 
     .brndwrap ul li{
@@ -1009,7 +1030,336 @@ width: 100%;
 
 
     /*brands section ends*/
+
+/*############################################ main footer section starts #####################################*/
+
+    .mainfooter{
+
+background: #1c1c1c;
+}
+
+    .footerlogo{
+
+width: 150px;
+
+color: white;
+
+margin: 20px 0;
+
+}
+
+    .footerlogo img{
+
+width: 100%;
+
+color: white;
+
+}
+
+    .footext{
+
+}
+
+    .footext p{
+
+font-size: 16px;
+
+color: gray;
+
+}
+
+    .footercontact{
+
+
+
+margin: 30px 0;
+
+}
+
+    .location{
+
+display: flex;
+
+align-items: center;
+
+margin: 15px 0;
+
+}
+
+    .locationlogo{
+
+color: green;
+
+}
+    .locationlogo i{
+
+font-size: 30px;
+
+}
+    
+    .locationtext{
+
+
+    }
+
+    .locationtext p{
+
+margin-left: 10px;
+
+line-height: 20px;
+
+color: gray;
+
+}
+
+    .phone{
+
+display: flex;
+
+margin: 20px 0;
+
+}
+
+    .phonelogo{
+
+margin-right: 10px;
+
+color: green;
+
+}
+
+    .phonelogo i{
+
+font-size: 25px;
+
+}
+
+    .phonetext{
+
+
+    }
+
+    .phonetext p{
+
+color: gray;
+
+}
+
+    .email{
+
+display: flex;
+
+margin: 20px 0;
+
+}
+
+    .emaillogo{
+
+margin-right: 10px;
+
+color: green;
+
+}
+
+    .emaillogo i{
+
+font-size: 30px;
+
+}
+
+    .emailtext{
+
+
+    }
+
+    .emailtext p{
+
+color: gray;
+
+}
+
+    .footertitle{
+
+
+    }
+
+    .footertitle h3{
+
+margin: 20px 0;
+
+color: white;
+
+}
+
+    .post{
+
+display: flex;
+
+margin: 20px 0;
+
+}
+
+    .postimg{
+
+margin-right: 10px;
+}
+
+    .postimg img{
+
+width: 100%;
+
+}
+
+    .posttext{
+
+color: gray;
+
+}
+
+    .posttext h6{
+
+font-size: 16px;
+
+}
+
+    .posttext p{
+
+font-size: 13px;
+
+}
+
+    .foottext{
+
+padding: 0;
+
+margin: 0;
+
+}
+
+    .foottext p{
+
+color: gray;
+
+}
+
+    .footerinput{
+
+margin: 20px 0;
+
+}
+
+    .footinput{
+
+border: none;
+
+background: none;
+
+border: solid 1px gray;
+
+padding: 5px 10px;
+}
+
+    .footbutton{
+    background: #f69165;
+    border: none;
+    border-radius: 0;
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+}
+
+    .socialmedia{
+
+display: flex;
+
+align-items: center;
+
+margin-top: 25px;
+
+}
+
+    .socialmedia h4{
+    color: white;
+}
+
+    .sociallogo{align-items: center;}
+
+    .sociallogo ul{
+
+display: flex;
+
+list-style: none;
+
+padding: 0;
+
+margin-left: 15px;
+
+margin: 0;
+
+margin-left: 20px;
+
+}
+
+    .sociallogo ul li{
+
+
+
+background: #2d2d2d;
+
+margin-right: 5px;
+
+padding: 2px 10px;
+
+color: white;
+}
+
+    .sociallogo ul li i{
+
+        
+    }
+
+    .footrow{
+
+padding: 70px 0px;
+
+}
+
+/*############################################ main footer section ends #####################################*/
     
     
-    
+/*############################################ last footer section starts #####################################*/
+.lastfooter{
+
+background: #161616;
+}
+
+.lastfootext{
+
+width: auto;
+
+margin: auto;
+}
+
+.lastfootext h1{
+
+color: white;
+
+font-size: 13px;
+
+font-weight: lighter;
+}
+
+.lastfootext h1 span{
+
+color: #0ddbd5;
+
+font-weight: normal;
+}
+
+.desktop_hide{
+
+    display: none;
+}
+
+/*############################################ last footer section ends #####################################*/
     
